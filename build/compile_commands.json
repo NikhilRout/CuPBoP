@@ -1,0 +1,97 @@
+[
+{
+  "directory": "/home/nikhil/CuPBoP/build",
+  "command": "/usr/bin/g++ -I/home/nikhil/CuPBoP/compilation/./KernelTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/./HostTranslation/include/cpu -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -g -std=gnu++14 -o compilation/CMakeFiles/kernelTranslator.dir/KernelTranslation.cpp.o -c /home/nikhil/CuPBoP/compilation/KernelTranslation.cpp",
+  "file": "/home/nikhil/CuPBoP/compilation/KernelTranslation.cpp"
+},
+{
+  "directory": "/home/nikhil/CuPBoP/build",
+  "command": "/usr/bin/g++ -I/home/nikhil/CuPBoP/compilation/./KernelTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/./HostTranslation/include/cpu -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -g -std=gnu++14 -o compilation/CMakeFiles/hostTranslator.dir/HostTranslation.cpp.o -c /home/nikhil/CuPBoP/compilation/HostTranslation.cpp",
+  "file": "/home/nikhil/CuPBoP/compilation/HostTranslation.cpp"
+},
+{
+  "directory": "/home/nikhil/CuPBoP/build",
+  "command": "/usr/bin/g++ -I/home/nikhil/CuPBoP/compilation/./KernelTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/KernelTranslation/./include/cpu -I/home/nikhil/CuPBoP/compilation/KernelTranslation/../../common -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -g -std=gnu++14 -o compilation/KernelTranslation/CMakeFiles/spmd2mpmd.dir/src/cpu/generate_cpu_format.cpp.o -c /home/nikhil/CuPBoP/compilation/KernelTranslation/src/cpu/generate_cpu_format.cpp",
+  "file": "/home/nikhil/CuPBoP/compilation/KernelTranslation/src/cpu/generate_cpu_format.cpp"
+},
+{
+  "directory": "/home/nikhil/CuPBoP/build",
+  "command": "/usr/bin/g++ -I/home/nikhil/CuPBoP/compilation/./KernelTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/KernelTranslation/./include/cpu -I/home/nikhil/CuPBoP/compilation/KernelTranslation/../../common -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -g -std=gnu++14 -o compilation/KernelTranslation/CMakeFiles/spmd2mpmd.dir/src/cpu/handle_sync.cpp.o -c /home/nikhil/CuPBoP/compilation/KernelTranslation/src/cpu/handle_sync.cpp",
+  "file": "/home/nikhil/CuPBoP/compilation/KernelTranslation/src/cpu/handle_sync.cpp"
+},
+{
+  "directory": "/home/nikhil/CuPBoP/build",
+  "command": "/usr/bin/g++ -I/home/nikhil/CuPBoP/compilation/./KernelTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/KernelTranslation/./include/cpu -I/home/nikhil/CuPBoP/compilation/KernelTranslation/../../common -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -g -std=gnu++14 -o compilation/KernelTranslation/CMakeFiles/spmd2mpmd.dir/src/cpu/init.cpp.o -c /home/nikhil/CuPBoP/compilation/KernelTranslation/src/cpu/init.cpp",
+  "file": "/home/nikhil/CuPBoP/compilation/KernelTranslation/src/cpu/init.cpp"
+},
+{
+  "directory": "/home/nikhil/CuPBoP/build",
+  "command": "/usr/bin/g++ -I/home/nikhil/CuPBoP/compilation/./KernelTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/KernelTranslation/./include/cpu -I/home/nikhil/CuPBoP/compilation/KernelTranslation/../../common -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -g -std=gnu++14 -o compilation/KernelTranslation/CMakeFiles/spmd2mpmd.dir/src/cpu/insert_sync.cpp.o -c /home/nikhil/CuPBoP/compilation/KernelTranslation/src/cpu/insert_sync.cpp",
+  "file": "/home/nikhil/CuPBoP/compilation/KernelTranslation/src/cpu/insert_sync.cpp"
+},
+{
+  "directory": "/home/nikhil/CuPBoP/build",
+  "command": "/usr/bin/g++ -I/home/nikhil/CuPBoP/compilation/./KernelTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/KernelTranslation/./include/cpu -I/home/nikhil/CuPBoP/compilation/KernelTranslation/../../common -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -g -std=gnu++14 -o compilation/KernelTranslation/CMakeFiles/spmd2mpmd.dir/src/cpu/insert_warp_loop.cpp.o -c /home/nikhil/CuPBoP/compilation/KernelTranslation/src/cpu/insert_warp_loop.cpp",
+  "file": "/home/nikhil/CuPBoP/compilation/KernelTranslation/src/cpu/insert_warp_loop.cpp"
+},
+{
+  "directory": "/home/nikhil/CuPBoP/build",
+  "command": "/usr/bin/g++ -I/home/nikhil/CuPBoP/compilation/./KernelTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/KernelTranslation/./include/cpu -I/home/nikhil/CuPBoP/compilation/KernelTranslation/../../common -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -g -std=gnu++14 -o compilation/KernelTranslation/CMakeFiles/spmd2mpmd.dir/src/cpu/memory_hierarchy.cpp.o -c /home/nikhil/CuPBoP/compilation/KernelTranslation/src/cpu/memory_hierarchy.cpp",
+  "file": "/home/nikhil/CuPBoP/compilation/KernelTranslation/src/cpu/memory_hierarchy.cpp"
+},
+{
+  "directory": "/home/nikhil/CuPBoP/build",
+  "command": "/usr/bin/g++ -I/home/nikhil/CuPBoP/compilation/./KernelTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/KernelTranslation/./include/cpu -I/home/nikhil/CuPBoP/compilation/KernelTranslation/../../common -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -g -std=gnu++14 -o compilation/KernelTranslation/CMakeFiles/spmd2mpmd.dir/src/cpu/performance.cpp.o -c /home/nikhil/CuPBoP/compilation/KernelTranslation/src/cpu/performance.cpp",
+  "file": "/home/nikhil/CuPBoP/compilation/KernelTranslation/src/cpu/performance.cpp"
+},
+{
+  "directory": "/home/nikhil/CuPBoP/build",
+  "command": "/usr/bin/g++ -I/home/nikhil/CuPBoP/compilation/./KernelTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/KernelTranslation/./include/cpu -I/home/nikhil/CuPBoP/compilation/KernelTranslation/../../common -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -g -std=gnu++14 -o compilation/KernelTranslation/CMakeFiles/spmd2mpmd.dir/src/cpu/tool.cpp.o -c /home/nikhil/CuPBoP/compilation/KernelTranslation/src/cpu/tool.cpp",
+  "file": "/home/nikhil/CuPBoP/compilation/KernelTranslation/src/cpu/tool.cpp"
+},
+{
+  "directory": "/home/nikhil/CuPBoP/build",
+  "command": "/usr/bin/g++ -I/home/nikhil/CuPBoP/compilation/./KernelTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/KernelTranslation/./include/cpu -I/home/nikhil/CuPBoP/compilation/KernelTranslation/../../common -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -g -std=gnu++14 -o compilation/KernelTranslation/CMakeFiles/spmd2mpmd.dir/src/cpu/warp_func.cpp.o -c /home/nikhil/CuPBoP/compilation/KernelTranslation/src/cpu/warp_func.cpp",
+  "file": "/home/nikhil/CuPBoP/compilation/KernelTranslation/src/cpu/warp_func.cpp"
+},
+{
+  "directory": "/home/nikhil/CuPBoP/build",
+  "command": "/usr/bin/g++ -DcudaRuntime2cpuRuntime_EXPORTS -I/home/nikhil/CuPBoP/compilation/./KernelTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/./HostTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/HostTranslation/./include/cpu -I/home/nikhil/CuPBoP/compilation/HostTranslation/../../common -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -g -fPIC -std=gnu++14 -o compilation/HostTranslation/CMakeFiles/cudaRuntime2cpuRuntime.dir/src/cpu/RemoveCudaBuiltin.cpp.o -c /home/nikhil/CuPBoP/compilation/HostTranslation/src/cpu/RemoveCudaBuiltin.cpp",
+  "file": "/home/nikhil/CuPBoP/compilation/HostTranslation/src/cpu/RemoveCudaBuiltin.cpp"
+},
+{
+  "directory": "/home/nikhil/CuPBoP/build",
+  "command": "/usr/bin/g++ -DcudaRuntime2cpuRuntime_EXPORTS -I/home/nikhil/CuPBoP/compilation/./KernelTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/./HostTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/HostTranslation/./include/cpu -I/home/nikhil/CuPBoP/compilation/HostTranslation/../../common -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -g -fPIC -std=gnu++14 -o compilation/HostTranslation/CMakeFiles/cudaRuntime2cpuRuntime.dir/src/cpu/RemoveMetadata.cpp.o -c /home/nikhil/CuPBoP/compilation/HostTranslation/src/cpu/RemoveMetadata.cpp",
+  "file": "/home/nikhil/CuPBoP/compilation/HostTranslation/src/cpu/RemoveMetadata.cpp"
+},
+{
+  "directory": "/home/nikhil/CuPBoP/build",
+  "command": "/usr/bin/g++ -DcudaRuntime2cpuRuntime_EXPORTS -I/home/nikhil/CuPBoP/compilation/./KernelTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/./HostTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/HostTranslation/./include/cpu -I/home/nikhil/CuPBoP/compilation/HostTranslation/../../common -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -g -fPIC -std=gnu++14 -o compilation/HostTranslation/CMakeFiles/cudaRuntime2cpuRuntime.dir/src/cpu/ReplaceConstantMemory.cpp.o -c /home/nikhil/CuPBoP/compilation/HostTranslation/src/cpu/ReplaceConstantMemory.cpp",
+  "file": "/home/nikhil/CuPBoP/compilation/HostTranslation/src/cpu/ReplaceConstantMemory.cpp"
+},
+{
+  "directory": "/home/nikhil/CuPBoP/build",
+  "command": "/usr/bin/g++ -DcudaRuntime2cpuRuntime_EXPORTS -I/home/nikhil/CuPBoP/compilation/./KernelTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/./HostTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/HostTranslation/./include/cpu -I/home/nikhil/CuPBoP/compilation/HostTranslation/../../common -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -g -fPIC -std=gnu++14 -o compilation/HostTranslation/CMakeFiles/cudaRuntime2cpuRuntime.dir/src/cpu/ReplaceCudaBuiltin.cpp.o -c /home/nikhil/CuPBoP/compilation/HostTranslation/src/cpu/ReplaceCudaBuiltin.cpp",
+  "file": "/home/nikhil/CuPBoP/compilation/HostTranslation/src/cpu/ReplaceCudaBuiltin.cpp"
+},
+{
+  "directory": "/home/nikhil/CuPBoP/build",
+  "command": "/usr/bin/g++ -DcudaRuntime2cpuRuntime_EXPORTS -I/home/nikhil/CuPBoP/compilation/./KernelTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/./HostTranslation/include/cpu -I/home/nikhil/CuPBoP/compilation/HostTranslation/./include/cpu -I/home/nikhil/CuPBoP/compilation/HostTranslation/../../common -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -g -fPIC -std=gnu++14 -o compilation/HostTranslation/CMakeFiles/cudaRuntime2cpuRuntime.dir/src/cpu/ReplaceKernelArgs.cpp.o -c /home/nikhil/CuPBoP/compilation/HostTranslation/src/cpu/ReplaceKernelArgs.cpp",
+  "file": "/home/nikhil/CuPBoP/compilation/HostTranslation/src/cpu/ReplaceKernelArgs.cpp"
+},
+{
+  "directory": "/home/nikhil/CuPBoP/build",
+  "command": "/usr/bin/g++ -DCPUruntime_EXPORTS -I/home/nikhil/CuPBoP/runtime/../common -I/home/nikhil/CuPBoP/runtime/./include -I/home/nikhil/CuPBoP/runtime/./include/cpu -I/home/nikhil/CuPBoP/runtime/./threadPool/include -I/home/nikhil/CuPBoP/runtime/./threadPool/include/cpu -I/home/nikhil/CuPBoP/runtime/../external/moodycamel -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -g -fPIC -std=gnu++14 -o runtime/CMakeFiles/CPUruntime.dir/src/cpu/cudaKernelImpl.cpp.o -c /home/nikhil/CuPBoP/runtime/src/cpu/cudaKernelImpl.cpp",
+  "file": "/home/nikhil/CuPBoP/runtime/src/cpu/cudaKernelImpl.cpp"
+},
+{
+  "directory": "/home/nikhil/CuPBoP/build",
+  "command": "/usr/bin/g++ -DCPUruntime_EXPORTS -I/home/nikhil/CuPBoP/runtime/../common -I/home/nikhil/CuPBoP/runtime/./include -I/home/nikhil/CuPBoP/runtime/./include/cpu -I/home/nikhil/CuPBoP/runtime/./threadPool/include -I/home/nikhil/CuPBoP/runtime/./threadPool/include/cpu -I/home/nikhil/CuPBoP/runtime/../external/moodycamel -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -g -fPIC -std=gnu++14 -o runtime/CMakeFiles/CPUruntime.dir/src/cpu/cudaRuntimeImpl.cpp.o -c /home/nikhil/CuPBoP/runtime/src/cpu/cudaRuntimeImpl.cpp",
+  "file": "/home/nikhil/CuPBoP/runtime/src/cpu/cudaRuntimeImpl.cpp"
+},
+{
+  "directory": "/home/nikhil/CuPBoP/build",
+  "command": "/usr/bin/g++ -DthreadPool_EXPORTS -I/home/nikhil/CuPBoP/runtime/threadPool/../../common -I/home/nikhil/CuPBoP/runtime/threadPool/./include -I/home/nikhil/CuPBoP/runtime/threadPool/./include/cpu -I/home/nikhil/CuPBoP/runtime/threadPool/../../external/moodycamel -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -g -fPIC -std=gnu++14 -o runtime/threadPool/CMakeFiles/threadPool.dir/src/cpu/api.cpp.o -c /home/nikhil/CuPBoP/runtime/threadPool/src/cpu/api.cpp",
+  "file": "/home/nikhil/CuPBoP/runtime/threadPool/src/cpu/api.cpp"
+}
+]

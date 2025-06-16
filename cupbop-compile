@@ -1,0 +1,66 @@
+#!/bin/bash
+
+# Setup environment variables
+export CuPBoP_PATH=~/CuPBoP
+export CUDA_PATH=/usr/local/cuda-11.7
+export LD_LIBRARY_PATH=$CuPBoP_PATH/build/runtime:$CuPBoP_PATH/build/runtime/threadPool:$LD_LIBRARY_PATH
+
+# Check if source file is provided
+if [ $# -lt 1 ]; then
+    echo "Usage: cupbop-compile <source.cu> [output_name]"
+    exit 1
+fi
+
+# Get the source file and output name
+SOURCE_FILE="$1"
+FILE_NAME=$(basename "$SOURCE_FILE" .cu)
+OUTPUT_NAME="${2:-$FILE_NAME}"
+
+# Clean any existing files
+rm -f *.o *.bc *.cui "$OUTPUT_NAME" a.out "${OUTPUT_NAME}_wrapper"
+
+# Step 1: Compile CUDA code to bitcode
+clang++ -std=c++11 "$SOURCE_FILE" \
+    -I"$CuPBoP_PATH" --cuda-path="$CUDA_PATH" \
+    --cuda-gpu-arch=sm_50 -L"$CUDA_PATH/lib64" \
+    -lcudart_static -ldl -lrt -pthread -save-temps -v
+
+# Step 2: Transform kernel code
+"$CuPBoP_PATH/build/compilation/kernelTranslator" \
+    "$FILE_NAME-cuda-nvptx64-nvidia-cuda-sm_50.bc" kernel.bc
+
+# Step 3: Transform host code
+"$CuPBoP_PATH/build/compilation/hostTranslator" \
+    "$FILE_NAME-host-x86_64-pc-linux-gnu.bc" host.bc
+
+# Step 4: Generate object files
+llc --relocation-model=pic --filetype=obj kernel.bc
+llc --relocation-model=pic --filetype=obj host.bc
+
+# Step 5: Link and create executable
+g++ -o "$OUTPUT_NAME" -fPIC -no-pie \
+    -I"$CuPBoP_PATH/runtime/threadPool/include" \
+    -L"$CuPBoP_PATH/build/runtime" \
+    -L"$CuPBoP_PATH/build/runtime/threadPool" \
+    host.o kernel.o \
+    -I"$CuPBoP_PATH" -lc -lCPUruntime -lthreadPool -lpthread
+
+# Create a wrapper script
+cat > "${OUTPUT_NAME}_wrapper" << EOF
+#!/bin/bash
+export CuPBoP_PATH=~/CuPBoP
+export LD_LIBRARY_PATH=\$CuPBoP_PATH/build/runtime:\$CuPBoP_PATH/build/runtime/threadPool:\$LD_LIBRARY_PATH
+exec ./${OUTPUT_NAME} "\$@"
+EOF
+
+# Make the wrapper executable
+chmod +x "${OUTPUT_NAME}_wrapper"
+
+# Check if compilation was successful
+if [ $? -eq 0 ]; then
+    echo "Compilation successful!"
+    echo "To run your program, use: ./${OUTPUT_NAME}_wrapper"
+else
+    echo "Compilation failed!"
+    exit 1
+fi

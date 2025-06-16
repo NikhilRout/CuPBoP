@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -I/usr/local/cuda-11.7/include -I/usr/lib/llvm-14/include -std=c++14   -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -Wunused -shared -Wl,-soname,libCPUruntime.so -o libCPUruntime.so CMakeFiles/CPUruntime.dir/src/cpu/cudaKernelImpl.cpp.o CMakeFiles/CPUruntime.dir/src/cpu/cudaRuntimeImpl.cpp.o 

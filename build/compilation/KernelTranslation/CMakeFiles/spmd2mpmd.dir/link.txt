@@ -1,0 +1,2 @@
+/usr/bin/ar qc libspmd2mpmd.a CMakeFiles/spmd2mpmd.dir/src/cpu/generate_cpu_format.cpp.o CMakeFiles/spmd2mpmd.dir/src/cpu/handle_sync.cpp.o CMakeFiles/spmd2mpmd.dir/src/cpu/init.cpp.o CMakeFiles/spmd2mpmd.dir/src/cpu/insert_sync.cpp.o CMakeFiles/spmd2mpmd.dir/src/cpu/insert_warp_loop.cpp.o CMakeFiles/spmd2mpmd.dir/src/cpu/memory_hierarchy.cpp.o CMakeFiles/spmd2mpmd.dir/src/cpu/performance.cpp.o CMakeFiles/spmd2mpmd.dir/src/cpu/tool.cpp.o CMakeFiles/spmd2mpmd.dir/src/cpu/warp_func.cpp.o
+/usr/bin/ranlib libspmd2mpmd.a
