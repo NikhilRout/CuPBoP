@@ -1,5 +1,13 @@
 # CuPBoP: Cuda for Parallelized and Broad-range Processors
 
+## Simplified/Added `cupbop-compile` for me
+`cupbop-compile.sh` sets up path, sources environment and runs all compilation commands. To run cuda files now
+```bash
+cd cuda_projects/matmul
+cupbop-compile matmul.cu
+./matmul_wrapper
+```
+
 ## Introduction
 
 CuPBoP is a framework which support executing unmodified CUDA source code
